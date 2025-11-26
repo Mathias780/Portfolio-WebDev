@@ -1,0 +1,73 @@
+// Responsive breakpoints
+@mixin tablet {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media(min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin large-desktop {
+    @media (min-width: 1440px) {
+        @content;
+    }
+}
+
+// Flexbox centering
+
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+//flexbox bottom right 
+@mixin flex-bottom-left {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+// Smooth transitions
+@mixin transition($property: all, $duration: 0.3s) {
+    transition: $property $duration ease-in-out;
+}
+
+// Text truncate
+@mixin truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+// Positioning 
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// Hover effects
+@mixin hover-lift {
+    @include transition(transform);
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+
+
+
