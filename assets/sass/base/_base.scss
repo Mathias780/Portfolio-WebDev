@@ -1,21 +1,2 @@
-@use '../abstracts/variables' as *;
-@use "../abstracts/mixins" as *;
-body {
-    background-color: $colors-bg;
-    color: $colors-text;
-    min-height: 100vh;
-}
 
-h1, h2, h3, h4, h5, h6 {
-    line-height: 1.2;
-    margin-bottom: $spacing-md;
-    font-family: $font-heading;
-}
-
-main {
-    border: 2px solid $colors-text;
-    margin: $spacing-lg; //Add proper spacing.
-    padding: $spacing-lg; // Add internal padding
-    min-height: calc(100vh - 4rem); //Account for margins.
-}
 
